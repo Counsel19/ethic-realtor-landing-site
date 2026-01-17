@@ -5,7 +5,18 @@ import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 // Mock property data for comparison
-const comparisonProperties = [
+const comparisonProperties: Array<{
+  id: string
+  title: string
+  price: string
+  location: string
+  imageUrl: string
+  averagePrice: string
+  priceChange: string
+  facilities: string
+  legalCompliance: "Strong" | "Weak"
+  neighbourhoodData: "Strong" | "Weak"
+}> = [
   {
     id: "1",
     title: "2 Bedroom flat",
